@@ -9,29 +9,77 @@ body {
   justify-content: center;
   gap: 1em;
 }
-
+.start-quiz {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 1030px;
+  max-width: 100%;
+  margin: auto;
+  display: none; /* by default hidden */
+}
+.start-quiz.show {
+  display: block;
+}
 .quiz-logo {
   max-width: 380px;
   width: 100%;  
+  display: block; 
 }
-
+.quiz-logo.show-logo {
+  display: none; 
+}
+/*********************** Button *******************/
 .button-bg {
   background: #01AB08;
   color: #FFFFFF;
   border-radius: 6px;
   padding: 0 8px 8px 0;
   cursor: pointer;
+  /* display: block; */
 }
-
-.star-button {
+.start-button {
   text-decoration-line: none;
   background-color: #35BD3A;
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 6px;
   font-family: inherit;
   cursor: pointer;
+}
+.button-bg:hover {
+  transform: scale(1.02);
+}
+
+/*********************** Header *******************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.header .quiz-logo {
+  width: 222px;
+}
+.volume-counter-wrapper {
+  text-align: right;  
+}
+.Volume-up-icon {
+  margin-right: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.number-count {
   display: block;
+  font-weight: 600;
+  font-size: 30px;
+  background-color: #FEC33D;
+  padding: 5px 8px;
+  border-radius: 5px;
 }

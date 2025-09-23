@@ -83,3 +83,21 @@ body {
   padding: 5px 8px;
   border-radius: 5px;
 }
+
+/*  */
+.question-container {
+  border-radius: 0.5em;
+  background-color: #F5F5F57A;
+}  
+.question {
+  border-radius: 0.5em;
+  background-color: #F5F5F57A;
+  margin-top: 1em;
+  padding: 1.2em;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: default;
+  position: relative;
+  top: 6px;
+  right: 6px;
+}

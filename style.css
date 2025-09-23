@@ -101,3 +101,22 @@ body {
   top: 6px;
   right: 6px;
 }
+.timer-wrapper {
+  background-color: #02a40a75;
+  border-radius: 6px;
+  padding-block: 4px;
+  width: fit-content;
+  margin: 1.5em 0 1.5em auto;
+}
+.timer {
+  border-radius: 5px;
+  background-color: #02a40a75;
+  padding-block: 0.1em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  width: 105px;
+  transition: background-color 0.25s ease-in-out;
+}

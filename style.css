@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  margin-bottom: 40px;
 }
 .start-quiz {
   font-family: "Poppins", sans-serif;
@@ -119,4 +120,44 @@ body {
   display: inline-block;
   width: 105px;
   transition: background-color 0.25s ease-in-out;
+}
+.answer-container {
+  border-radius: 0.5em;
+  background-color: #F5F5F57A;
+}
+.answer-block {
+  border-radius: 0.5em;
+  background-color: #F5F5F57A;
+  margin-top: 1em;
+  padding: 1.2em;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: default;
+  position: relative;
+  top: 6px;
+  right: 6px;
+}
+.options {
+  border: 1px solid #b9b9b987;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.options:last-child {
+  margin-bottom: 0;
+}
+.button-block {
+  text-align: right;
+  margin-top: 20px;
+}
+.next-button {
+  display: inline-block;
+  color: #01AB08;
+  font-size: 24px;
+  font-weight: 600;
 }

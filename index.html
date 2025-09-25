@@ -20,22 +20,41 @@
       <img src="images/quiz.svg" alt="Logo" class="quiz-logo">
       <div class="volume-counter-wrapper">
         <img src="images/volume_icon.svg" alt="Volume icon" class="Volume-up-icon">
+        <audio id="correctSound" src="/audios/right-answer.wav"></audio>
+        <audio id="wrongSound" src="/audios/game-over.wav"></audio>
         <span class="number-count">00/25</span>
       </div>
     </div>
     <div class="question-container">
       <p class="question">Inside which HTML element do we put the JavaScript? </p>
+      <p class="question">What is the correct way to write a JavaScript object? </p>
+      <p class="question">Which method converts a JavaScript object to a JSON string? </p>
     </div>
+
     <div class="timer-wrapper"><span class="timer">00:30</span></div>
     <div class="answer-container">
       <div class="answer-block">
-        <div class="options">&lt;js&gt;</div>
-        <div class="options">&lt;scripting&gt;</div>
-        <div class="options">&lt;javascript&gt;</div>
-        <div class="options">&lt;script&gt;</div>
+        <div class="options" data-correct="false">&lt;js&gt;</div>
+        <div class="options" data-correct="false">&lt;scripting&gt;</div>
+        <div class="options" data-correct="false">&lt;javascript&gt;</div>
+        <div class="options" data-correct="true">&lt;script&gt;</div>
+      </div>
+     
+      <div class="answer-block">
+        <div class="options" data-correct="true">{ name: "John" }</div>
+        <div class="options" data-correct="false">["name": "John"]</div>
+        <div class="options" data-correct="false">name = "John"</div>
+        <div class="options" data-correct="false">None of these</div>
+      </div>
+
+      <div class="answer-block">
+        <div class="options" data-correct="true">JSON.stringify()</div>
+        <div class="options" data-correct="false">JSON.parse()</div>
+        <div class="options" data-correct="false">Object.toJSON()</div>
+        <div class="options" data-correct="false">Stringify()</div>
       </div>
     </div>
-    <div class="button-block"><span class="next-button" type="button">Next ></span></div>
+    <div class="button-block"><span id="nextBtn" type="button">Next ></span></div>
   </div>
 </body>
 </html>
